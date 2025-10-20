@@ -1,0 +1,105 @@
+import Image from "next/image";
+
+export const HeroSection = () => {
+  return (
+    <div className="bg-white text-black max-w-7xl mx-auto flex flex-col gap-y-[30px]">
+      <div className="px-30 py-6">
+        <div className="max-w-[719px]">
+          <h1 className="font-extrabold md:text-8xl text-5xl font-sf-display leading-none">
+            A tiny time tracker for your next big project
+          </h1>
+        </div>
+        <div className="flex flex-col md:flex-row md:gap-x-4 gap-y-4 mt-8">
+          {/* Mac button */}
+          <div>
+            <button className="flex gap-x-[10px] bg-black justify-center items-center p-5 rounded-2xl drop-shadow-2xl/50">
+              <span>
+                <svg
+                  width="18"
+                  height="22"
+                  viewBox="0 0 18 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.073 5.39971C12.5519 5.39971 12.0623 5.48058 11.604 5.64229C11.1458 5.79503 10.7326 5.95225 10.3642 6.11398C9.99584 6.27569 9.6724 6.35656 9.3939 6.35656C9.10639 6.35656 8.78295 6.28019 8.42358 6.12745C8.07319 5.97472 7.69585 5.82648 7.29154 5.68272C6.88725 5.53 6.456 5.45363 5.9978 5.45363C5.1353 5.45363 4.29975 5.69171 3.49116 6.16788C2.69155 6.63507 2.03569 7.33135 1.52358 8.25675C1.01147 9.17316 0.755417 10.3097 0.755417 11.6664C0.755417 12.9331 0.96655 14.1909 1.38882 15.4398C1.82006 16.6796 2.33666 17.7308 2.93862 18.5932C3.45972 19.321 3.96733 19.9454 4.46148 20.4666C4.95561 20.9876 5.53062 21.2481 6.18648 21.2481C6.61772 21.2481 6.99057 21.1762 7.30502 21.0325C7.62847 20.8888 7.96538 20.7451 8.31577 20.6013C8.67514 20.4576 9.11986 20.3857 9.64995 20.3857C10.198 20.3857 10.6337 20.4576 10.9572 20.6013C11.2806 20.7361 11.5951 20.8753 11.9005 21.019C12.206 21.1538 12.5969 21.2212 13.073 21.2212C13.7827 21.2212 14.3892 20.9517 14.8924 20.4126C15.4044 19.8735 15.8806 19.285 16.3208 18.6472C16.824 17.9104 17.1834 17.2411 17.3989 16.6392C17.6236 16.0372 17.7404 15.7183 17.7493 15.6824C17.7314 15.6734 17.5787 15.5925 17.2912 15.4398C17.0126 15.287 16.6892 15.0489 16.3208 14.7255C15.9614 14.3931 15.6425 13.9574 15.364 13.4182C15.0944 12.8792 14.9597 12.2234 14.9597 11.4507C14.9597 10.7769 15.0676 10.1974 15.2832 9.71222C15.4987 9.21808 15.7504 8.81379 16.0379 8.49933C16.3254 8.17589 16.5859 7.93331 16.8194 7.7716C17.0531 7.60089 17.1834 7.50207 17.2103 7.47511C16.7431 6.80128 16.2221 6.32062 15.647 6.03312C15.081 5.73664 14.56 5.55695 14.0838 5.49406C13.6075 5.43117 13.2707 5.39971 13.073 5.39971ZM12.3318 3.68819C12.6552 3.29289 12.9203 2.84367 13.1269 2.34054C13.3336 1.82843 13.4369 1.30284 13.4369 0.763779C13.4369 0.602063 13.4234 0.462806 13.3964 0.346008C12.8754 0.363977 12.3272 0.521203 11.7523 0.817683C11.1773 1.11417 10.7011 1.48702 10.3238 1.93624C10.0273 2.26866 9.76225 2.69093 9.52866 3.20304C9.29506 3.70617 9.17827 4.22725 9.17827 4.76632C9.17827 4.84717 9.18276 4.92354 9.19174 4.99542C9.20073 5.0673 9.20971 5.11671 9.2187 5.14366C9.30854 5.16163 9.40287 5.17062 9.5017 5.17062C9.97788 5.17062 10.481 5.03136 11.0111 4.75284C11.5412 4.46535 11.9814 4.11046 12.3318 3.68819Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              <span className="font-bold text-base text-white leading-[19px]">
+                Download for Mac
+              </span>
+              <span></span>
+            </button>
+          </div>
+
+          {/* Product Hunt button */}
+          <div>
+            <button className="flex gap-x-[10px] bg-white justify-center items-center p-5 rounded-2xl border border-[#FF6154]">
+              <div>
+                <svg
+                  width="31"
+                  height="32"
+                  viewBox="0 0 31 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M31 16C31 24.5604 24.0604 31.5 15.5 31.5C6.93961 31.5 0 24.5604 0 16C0 7.43961 6.93961 0.5 15.5 0.5C24.0604 0.5 31 7.43961 31 16Z"
+                    fill="#FF6154"
+                  />
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M17.4329 16.4559L13.0929 16.456V11.806H17.4329C18.7019 11.806 19.7306 12.8468 19.7306 14.1309C19.7306 15.4149 18.7019 16.4559 17.4329 16.4559ZM17.4329 8.70587H10.0294V24.2059H13.0929V19.556H17.4329C20.3938 19.556 22.7941 17.127 22.7941 14.1309C22.7941 11.1347 20.3938 8.70587 17.4329 8.70587Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div className="flex flex-col items-start font-bold text-base text-white leading-[19px]">
+                <span className="font-hevetica uppercase text-[#FF6154] font-bold text-[9px] leading-none">
+                  Featured on
+                </span>
+                <span className="font-hevetica text-[#FF6154] font-bold text-[21px] leading-none">
+                  Product Hunt
+                </span>
+              </div>
+              <div className="flex flex-col gap-y-1 justify-center items-center">
+                <svg
+                  width="11"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M11.0025 10.5H0L5.50125 0.5L11.0025 10.5Z"
+                    fill="#FF6154"
+                  />
+                </svg>
+
+                <span className="font-hevetica font-bold text-[13px] leading-none text-[#FF6154]">
+                  531
+                </span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="bg-white flex justify-center items-center mt-[80px]">
+        <Image
+          src="/assets/hero.png"
+          alt="Hero photo"
+          width={1430}
+          height={770}
+          className="object-cover"
+        />
+      </div>
+    </div>
+  );
+};

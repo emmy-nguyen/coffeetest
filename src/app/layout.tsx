@@ -13,7 +13,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-sf-text antialiased">{children}</body>
+      <body className="bg-white h-screen font-sf-text antialiased">
+        {children}
+      </body>
     </html>
   );
 }

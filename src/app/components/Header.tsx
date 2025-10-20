@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { MacButton } from "./MacButton";
-import { BlackAppleIcon } from "./icons/BlackAppleIcon";
 
 export const Header = () => {
   return (
@@ -14,7 +12,7 @@ export const Header = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_1_140)">
+          <g clipPath="url(#clip0_1_140)">
             <path
               d="M10.426 36C4.7452 36 0.139999 31.3948 0.139999 25.714V10.286C0.139999 4.6052 4.7452 0 10.426 0H25.854C31.5348 0 36.14 4.6052 36.14 10.286V25.714C36.14 31.3948 31.5348 36 25.854 36H10.426Z"
               fill="black"
