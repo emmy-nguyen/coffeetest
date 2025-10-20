@@ -53,7 +53,7 @@ export const FeaturedGrid = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto mt-[132px]">
+    <div className="max-w-7xl mx-auto mt-12 md:mt-[132px]">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-13 px-36 justify-center items-center">
         {features.map((feature, index) => (
           <div key={`feature-${index}`} className="relative">
@@ -78,7 +78,7 @@ export const FeaturedGrid = () => {
       </div>
 
       {/* Mac button */}
-      <div className="flex justify-center items-center mt-[110px]">
+      <div className="flex justify-center items-center mt-12 md:mt-[110px]">
         <button className="flex gap-x-[10px] bg-black justify-center items-center p-5 rounded-2xl drop-shadow-2xl/50">
           <span>
             <svg

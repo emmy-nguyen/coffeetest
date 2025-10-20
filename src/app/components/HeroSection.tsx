@@ -3,7 +3,7 @@ import Image from "next/image";
 export const HeroSection = () => {
   return (
     <div className="bg-white text-black max-w-7xl mx-auto flex flex-col gap-y-[30px]">
-      <div className="px-30 py-6">
+      <div className="px-8 py-4 md:px-30 md:py-6">
         <div className="max-w-[719px]">
           <h1 className="font-extrabold md:text-8xl text-5xl font-sf-display leading-none">
             A tiny time tracker for your next big project
@@ -91,7 +91,7 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white flex justify-center items-center mt-[80px]">
+      <div className="bg-white flex justify-center items-center mt-8 md:mt-[80px] px-4 md:px-0">
         <Image
           src="/assets/hero.png"
           alt="Hero photo"
