@@ -36,7 +36,7 @@ export const HeroSection = () => {
 
           {/* Product Hunt button */}
           <div>
-            <button className="flex gap-x-[10px] bg-white justify-center items-center p-5 rounded-2xl border border-[#FF6154]">
+            <button className="flex gap-x-[10px] bg-white justify-center items-center p-3 rounded-2xl border border-[#FF6154]">
               <div>
                 <svg
                   width="31"
